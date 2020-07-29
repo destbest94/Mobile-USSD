@@ -3,6 +3,7 @@ import 'package:dynamic_theme/dynamic_theme.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:mobile_ussd/pages/Contact/ContactPage.dart';
 import 'package:mobile_ussd/plugin/Connection.dart';
 import 'package:mobile_ussd/plugin/Languages.dart';
 import 'package:mobile_ussd/pages/About/AboutPage.dart';
@@ -295,6 +296,14 @@ class _MyHomePageState extends State<MyHomePage> {
                                 Languages.LANGUAGE[snapshot.data]['contact']),
                             onTap: () {
                               Navigator.pop(context);
+                              Navigator.push(
+                                  context,
+                                  PageRouteBuilder(
+                                    pageBuilder: (_, __, ___) => ContactPage(
+                                      lang: snapshot.data,
+                                    ),
+                                    transitionDuration: Duration(seconds: 0),
+                                  ));
                             },
                           ),
                           ListTile(
