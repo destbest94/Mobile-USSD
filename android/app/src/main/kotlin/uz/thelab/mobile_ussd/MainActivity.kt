@@ -1,4 +1,4 @@
-package uz.thelab.mobile_ussd
+package uz.thelab.mobileussd
 
 import io.flutter.embedding.android.FlutterActivity
 

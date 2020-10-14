@@ -165,7 +165,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       onPressed: () {
                         Share.share(Languages.LANGUAGE[snapshot.data]
                                 ['shareText'] +
-                            'https://play.google.com/store/apps/details?id=uz.thelab.mobile_ussd');
+                            'https://play.google.com/store/apps/details?id=uz.thelab.mobileussd');
                       },
                     ),
                   ),
@@ -339,7 +339,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                 Languages.LANGUAGE[snapshot.data]['rating']),
                             onTap: () {
                               launch(
-                                  'https://play.google.com/store/apps/details?id=uz.thelab.mobile_ussd');
+                                  'https://play.google.com/store/apps/details?id=uz.thelab.mobileussd');
                             },
                           ),
                           ListTile(
